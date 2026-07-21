@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="NodeJS REST API, Manage Students, using an in-memory database, BackEnd Project, Web Development, Full-Stack Apps, FrontEnd, BackEnd, Technology, Software Engineering, Software Development, TS Academy" />
+  <meta name="description" content="developing HTML website from Figma Webpage design - Software Development, Phoenix Cohort, TS-Academy" />
+  <meta name="author" content="Dr Stephen Achugwo, https://apps.net.ng" />
+  <meta name="backendtutor" content="Engr Obute, Software Development Course, TS Academy" />
+  <title>TSAcademy StudentMS</title>
+  <link rel="shortcut icon" href="https://apps.net.ng/public/tsoft/html/solarsystem/AS_Icon1.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="https://apps.net.ng/public/tsoft/html/solarsystem/AS_Icon2.png" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>
+      <img src="https://apps.net.ng/public/tsoft/html/solarsystem/tsalogo.png" width="70px" alt="">
+      <br>TS Academy
+      <br>Phoenix Cohort
+      <br>Software Development
+    </h1>
+    <h2>Register New Students</h2>
+    
+    <form id="studentForm">
+      <input type="hidden" id="studentId">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="number" id="age" placeholder="Age" required>
+      <input type="text" id="grade" placeholder="Grade" required>
+      <button type="submit" id="submitBtn">Add Student</button>
+    </form><br>
+
+    <h1>STUDENTS LIST</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Grade</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="studentTableBody">
+        <!-- Data will be injected via JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="tsa-students.js"></script>
+</body>
+</html>
